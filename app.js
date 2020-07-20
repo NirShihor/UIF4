@@ -1,7 +1,7 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 const app = express();
-const url = "mongodb+srv://shihor:N1rSh1hor@cluster0.2h9o9.mongodb.net/UIF4?retryWrites=true&w=majority";
+const url = "mongodb+srv://shihor:N1rSh1hor@cluster0.c9ew1.mongodb.net/uif4test?retryWrites=true&w=majority";
 app.set("view engine", "ejs");
 
 const mongoose = require('mongoose');
@@ -24,7 +24,7 @@ mongoose.connect(url, { useNewUrlParser: true, useUnifiedTopology: true }, funct
 
     });
 
-    app.post("/UIF4", function (req, res) {
+    app.post("/uif4test", function (req, res) {
         var nameOne = req.body.firstName;
         var nameTwo = req.body.secondName;
         var emailOne = req.body.email;
