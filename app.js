@@ -36,20 +36,21 @@ mongoose.connect(url, { useNewUrlParser: true, useUnifiedTopology: true }, funct
         });
 
         detail.save();
+
         res.redirect("/");
     });
 
-    let port = process.env.PORT;
-    if (port == null || ""){
-        port = 3000;
-    }
+        let port = process.env.PORT;
+        if (port == null || ""){
+            port = 3000;
+        }
 
-    app.listen(port, function () {
-        console.log('Server has started successfully');
-    });
+        app.listen(port, function () {
+            console.log('Server has started successfully');
+        });
 
-    if(err) return console.error(err);
-    console.log("Connected to database");
+        if(err) return console.error(err);
+        console.log("Connected to database");
 
 });
 
