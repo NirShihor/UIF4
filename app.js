@@ -24,7 +24,7 @@ mongoose.connect(url, { useNewUrlParser: true, useUnifiedTopology: true }, funct
 
     });
 
-    app.post("/uif4.herokuapp.com/", function (req, res) {
+    app.post("/UIF4/", function (req, res) {
         var nameOne = req.body.firstName;
         var nameTwo = req.body.secondName;
         var emailOne = req.body.email;
