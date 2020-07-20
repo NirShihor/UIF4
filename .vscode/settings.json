@@ -1,0 +1,6 @@
+{
+    "githubPullRequests.remotes": [
+        "origin",
+        "is:open is:pr review-requested:NirShihor archived:false "
+    ]
+}
