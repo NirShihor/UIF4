@@ -52,6 +52,9 @@ mongoose.connect(url, { useNewUrlParser: true, useUnifiedTopology: true }, funct
         if(err) return console.error(err);
         console.log("Connected to database");
 
+        res.redirect("/");
+
+
 });
 
 const db = mongoose.connection
