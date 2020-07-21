@@ -37,7 +37,7 @@ mongoose.connect(url, { useNewUrlParser: true, useUnifiedTopology: true }, funct
 
         detail.save();
 
-        //res.redirect("/");
+        res.redirect("/");
     });
 
         let port = process.env.PORT;
@@ -51,9 +51,6 @@ mongoose.connect(url, { useNewUrlParser: true, useUnifiedTopology: true }, funct
 
         if(err) return console.error(err);
         console.log("Connected to database");
-
-        res.redirect("/");
-
 
 });
 
